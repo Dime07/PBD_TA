@@ -1,0 +1,124 @@
+.web {
+    overflow: hidden;
+}
+
+/* navbar */
+.menu {
+    background-color: #2a52c4;
+    position: sticky;
+    z-index: 2;
+}
+
+.sticky {
+    position: fixed;
+    top: 0;
+    width: 100%;
+}
+
+.nav-link {
+    color: white !important;
+    font-weight: bold;
+    margin-right: 20px;
+}
+
+.title {
+    font-weight: bold;
+    font-size: 32px;
+    margin-top: 50px;
+    margin-bottom: 0px;
+    color: white;
+    z-index: 2;
+}
+
+.subtitle {
+    font-size: 20px;
+    margin-bottom: 50px;
+    color: white;
+}
+
+.hero-section {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+        url("../img/undip.jpg");
+    height: 90%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+    margin-top: 20px;
+}
+
+/* CARD SECTION */
+
+.title-card {
+    font-size: 24px;
+    color: #2a52c4;
+    font-weight: bold;
+    margin-top: 20px;
+}
+
+.card {
+    border: rgba(68, 68, 68, 0.548) solid 0.5px;
+    border-radius: 15px;
+    width: 400px;
+    height: 250px;
+    box-shadow: 12px 14px 22px rgba(0, 0, 0, 0.25);
+    box-sizing: border-box;
+    margin: auto;
+}
+
+.icon-card {
+    width: 50px;
+    margin-top: 40px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.icon-card-2 {
+    width: 70px;
+    margin-top: 40px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.icon-card-2:hover {
+    width: 80px;
+}
+
+.icon-card:hover {
+    width: 60px;
+}
+
+/* BERITA */
+.title-berita {
+    font-size: 30px;
+    color: #2a52c4;
+    font-weight: bold;
+}
+
+.card-title {
+    font-weight: bold;
+    color: #2a52c4;
+    font-size: 18px;
+}
+
+.news {
+    height: 350px;
+}
+
+.footer {
+    background-color: #2a52c4;
+}
+
+/* HALAMAN FORM */
+.form {
+    height: 95vh;
+}
+
+.ilus-div {
+    position: relative;
+}
+
+.ilus {
+    position: absolute;
+    right: 0;
+}
