@@ -21,6 +21,7 @@ use App\Http\Controllers\AuthController;
 
 
 Route::get('/', [LandingController::class, 'index'])->name('landing');
+Route::view('/form', 'form');
 
 
 

@@ -110,9 +110,6 @@
 }
 
 /* HALAMAN FORM */
-.form {
-    height: 95vh;
-}
 
 .ilus-div {
     position: relative;
@@ -121,4 +118,16 @@
 .ilus {
     position: absolute;
     right: 0;
+}
+
+label {
+    color: black;
+}
+
+.btn {
+    margin: 10px 5px;
+}
+
+.title-form {
+    color: black;
 }

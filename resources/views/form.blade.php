@@ -31,31 +31,152 @@
         <!-- FORM -->
         <div class="form mx-3">
             <div class="row mt-3">
-                <div class="col-12 text-start">
-                    <h3>Data diri</h3>
+                <div class="title-form col-12 text-start" style="margin-top: 50px;">
+                    <h3><b>Data diri</b></h3>
                     <p class="m-0">Masukkan data diri yang sudah kamu dapatkan <br>
                         saat pendaftaran</p>
                 </div>
             </div>
             <div class="row mt-2">
-                <div class="col-6">
+                <div class="col-12">
+                    <form method="POST" action="Submit">
+                        @csrf
+                        <div class="row">
+                            <div class="form-group col-6">
+                                <label for="no_daftar">Nomor pendaftaran</label>
+                                <input id="no_daftar" type="text" class="border rounded-0 form-control" style="margin-bottom: 15px;" name="no_pendaftaran" />
+                            </div>
 
-                    <form>
-                        <div class="mb-3">
-                            <label for="exampleInputEmail1" class="form-label">Email address</label>
-                            <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+                            <div class="form-group col-6">
+                                <label for="nama">Nama Lengkap</label>
+                                <input id="nama" type="text" class="border rounded-0 form-control" style="margin-bottom: 15px;" name="nama_lengkap" />
+                            </div>
+                        </div>
 
+                        <div class="row">
+                            <div class="form-group col-6">
+                                <label for="nik">NIK</label>
+                                <input id="nik" type="text" class="border rounded-0 form-control" style="margin-bottom: 15px;" name="no_ktp" />
+                            </div>
+
+                            <div class="form-group col-6">
+                                <label for="jk">Jenis Kelamin:</label>
+                                <select class="form-control" id="jk">
+                                    <option>laki-laki</option>
+                                    <option>perempuan</option>
+                                </select>
+                            </div>
                         </div>
-                        <div class="mb-3">
-                            <label for="exampleInputPassword1" class="form-label">Password</label>
-                            <input type="password" class="form-control" id="exampleInputPassword1">
+
+                        <div class="row">
+                            <div class="form-group col-6">
+                                <label for="ttl">Tempat tanggal lahir</label>
+                                <input id="ttl" type="text" class="border rounded-0 form-control" style="margin-bottom: 15px;" name="ttl" />
+                            </div>
+
+                            <div class="form-group col-6">
+                                <label for="asal">Asal:</label>
+                                <input id="asal" type="text" class="border rounded-0 form-control" style="margin-bottom: 15px;" name="asal" />
+                            </div>
                         </div>
-                        <button type="submit" class="btn btn-primary">Submit</button>
+
+                        <div class="row">
+                            <div class="form-group col-6">
+                                <label for="jk">Status Kewarganegaraan</label>
+                                <select class="form-control" id="jk">
+                                    <option>WNA</option>
+                                    <option>WNI</option>
+                                </select>
+                            </div>
+                        </div>
+
+                        <div class="row">
+                            <div class="form-group col-6">
+                                <label for="ayah">Nama ayah</label>
+                                <input id="ayah" type="text" class="border rounded-0 form-control" style="margin-bottom: 15px;" name="nama_ayah" />
+                            </div>
+
+                            <div class="form-group col-6">
+                                <label for="jk">Pekerjaan</label>
+                                <select class="form-control" id="jk">
+                                    <option>tidak bekerja</option>
+                                    <option>pns</option>
+                                    <option>tni</option>
+                                    <option>wiraswasta</option>
+                                    <option>dosen</option>
+                                </select>
+                            </div>
+                        </div>
+
+                        <div class="row">
+                            <div class="form-group col-6">
+                                <label for="ibu">Nama ibu</label>
+                                <input id="ibu" type="text" class="border rounded-0 form-control" style="margin-bottom: 15px;" name="nama_ibu" />
+                            </div>
+
+                            <div class="form-group col-6">
+                                <label for="jk">Pekerjaan</label>
+                                <select class="form-control" id="jk">
+                                    <option>tidak bekerja</option>
+                                    <option>pns</option>
+                                    <option>tni</option>
+                                    <option>wiraswasta</option>
+                                    <option>dosen</option>
+                                </select>
+                            </div>
+                        </div>
+
+                        <div class="row">
+                            <div class="form-group col-6">
+                                <label for="wali">Nama wali</label>
+                                <input id="wali" type="text" class="border rounded-0 form-control" style="margin-bottom: 15px;" name="nama_wali" />
+                            </div>
+
+                            <div class="form-group col-6">
+                                <label for="jk">Pekerjaan</label>
+                                <select class="form-control" id="jk">
+                                    <option>tidak bekerja</option>
+                                    <option>pns</option>
+                                    <option>tni</option>
+                                    <option>wiraswasta</option>
+                                    <option>dosen</option>
+                                </select>
+                            </div>
+                        </div>
+
+                        <div class="row">
+                            <div class="form-group col-6">
+                                <label for="saudara">Jumlah Saudara</label>
+                                <input id="saudara" type="text" class="border rounded-0 form-control" style="margin-bottom: 15px;" name="saudara" />
+                            </div>
+
+                            <div class="form-group col-6">
+                                <label for="urutan">Anak Ke</label>
+                                <input id="urutan" type="text" class="border rounded-0 form-control" style="margin-bottom: 15px;" name="urutan_saudara" />
+                            </div>
+                        </div>
+
+                        <div class="row">
+                            <div class="form-group col-6">
+                                <label for="jk">UKT</label>
+                                <select class="form-control" id="jk">
+                                    <option>1</option>
+                                    <option>2</option>
+                                    <option>3</option>
+                                    <option>4</option>
+                                    <option>5</option>
+                                    <option>6</option>
+                                    <option>7</option>
+
+                                </select>
+                            </div>
+                        </div>
+
+                        <input type="submit" class="btn btn-primary" value="Save Changes" name="submit"></input>
+                        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
                     </form>
 
-                </div>
-                <div class="col-6 ilus-div">
-                    <img class="ilus" src="{{ asset('img/illustration.png') }}" alt="ilustrasi" width="70%">
+
                 </div>
             </div>
         </div>
